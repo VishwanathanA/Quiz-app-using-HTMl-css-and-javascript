@@ -1,0 +1,144 @@
+/* Base styles */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    background-color:blueviolet;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    background-color: rgb(53, 8, 96);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 24px;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: rgb(58, 172, 213);
+    transition: transform 0.2s, border 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    border: 2px solid white;
+}
+
+button.correct {
+    background-color: green;
+}
+
+button.incorrect {
+    background-color: red;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navigation button {
+    width: 48%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .header {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation button {
+        width: 100%;
+        height: 40px;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
+@media (min-width: 481px) and (max-width: 1200px) {
+    .header {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+        padding: 18px;
+    }
+
+    .choices {
+        flex-direction: row;
+        gap: 15px;
+        margin: 15px 0;
+    }
+
+    button {
+        width: 45%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .navigation {
+        padding: 20px 0;
+    }
+
+    .navigation button {
+        width: 45%;
+        height: 50px;
+        font-size: 16px;
+    }
+}
